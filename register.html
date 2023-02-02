@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registrering | Login</title>
+	<meta name="description" content="Registration page">
+	<meta charset="utf-8">	
+	
+
+<body>
+	<h2>Registrering</h2>
+	
+	<form method="post" enctype="multipart/form-data" action="register.php">
+	  <p>Osäker på om du redan är registrerad? Kolla om din mail redan används nedan:</p>
+	  <p>
+         <input type="text" name="checkEmail" placeholder="Email"/>
+		 <input type="submit" name="checkEmail_button" value="Skicka"/>
+      </p>
+	  
+	  <hr />
+      <p>Registrering:</p>
+	  <p>
+        <input type="text" name="username" placeholder="Användarnamn"/>
+      </p>
+      <p>
+        <input type="password" name="password" placeholder="Lösenord"/>
+      </p>
+	  <p>
+        <input type="password" name="confirmPassword" placeholder="Bekräfta lösenord"/>
+      </p>
+	  <p>
+        <input type="text" name="email" placeholder="Email"/>
+      </p>
+      
+	   <p>
+        <input type="submit" name="register_button" value="Registrera"/> 
+		</form>
+		<a href="login.php">
+		  <button>Logga in</button>
+		</a>
+      </p>
+    
+
+</body>
+
+
+
+</html>

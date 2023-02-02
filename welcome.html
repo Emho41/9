@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Välkommen | Forum</title>
+	<meta name="description" content="Welcome page">
+	<meta charset="utf-8">	
+	<link rel="stylesheet" href="forum.css">
+</head>
+
+
+<body>
+	<center><a href="index.php">Start</a> | <a href="logout.php"> Logga ut</a></center>
+	<h1>Forum</h1>
+	<h2>Välkommen ---user--- !</h2>
+	<p>Gör ett nytt inlägg via formuläret nedan eller bläddra bland existerande ämnen</p>
+	
+	<form method="post" enctype="multipart/form-data" action="index.php">
+	  <p>
+        <input type="text" name="subject" placeholder="Ämne"/>
+      </p>
+      <p>
+        <textarea name="text" rows="10" cols="25" placeholder="Text"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="new_button" value="Nytt inlägg"/>
+		
+      </p>
+    </form>
+	
+	
+	
+	<hr />
+	<h2>INLÄGG EFTER ÄMNE:</h2>
+	<form method="post" enctype="multipart/form-data" action="search.php">
+	  <p>
+		  <input type="text" name="subjects" placeholder="Ämne"/>
+		  <input type="submit" name="subjects_button" value="Sök"/>
+	  </p>
+	</form>
+	<hr />
+	<h2>KOMMENTERA INLÄGG:</h2>
+	<form method="post" enctype="multipart/form-data" action="index.php">	
+	  <p>
+        <input type="text" name="postID" placeholder="Välj inlägg[0-9]"/>
+      </p>
+	  <p>
+		<textarea name="comment" rows="3" cols="15" placeholder="Kommentar"></textarea><br />
+		<input type="submit" name="comment_button" value="Kommentera"/>
+	  </p>
+	</form>
+	<hr />
+	<!--===entries===-->
+    <form method="post" enctype="multipart/form-data" action="index.php?">
+	<hr />
+	<p>
+	  <strong>Inlägg:</strong> ---no---
+    </p>
+	
+    <p>
+	  <strong>Tid:</strong> ---time---<br />
+	  <strong>Från:</strong> ---name---<br />
+	  <strong>Ämne:</strong> ---subject---<br />
+	  <strong>Text:</strong> ---text---
+    </p>
+	
+	  
+	</form>
+	<hr />
+    <!--===entries===-->
+	
+	
+	<p>
+      <strong>Kommentar:</strong> ---comment---
+    </p>
+	
+	
+</body>
+
+
+
+
+</html>
